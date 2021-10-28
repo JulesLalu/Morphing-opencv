@@ -5,16 +5,17 @@ The main file for running the code is morphing.py
 
 ## How to interact with the code
 
-1. Run the code
-2. The image of the man appears : click on a pixel that you want to warp into the corresponding pixel of the cat image
-3. Press on any keyboard
-4. Click on the corresponding output pixel on the cat image
-5. Press on any keyboard
-6. Repeat steps 2 to 5 until the 28 pairs of points have been chosen
-7. The first image of the transformation is shown : it is the man before the morphing
-8. Each time you press on a keyboard, you see the next step of the morphing
-9. You can escape the morphing by pressing esc.
-10. On the last image, you have the photo of the cat.
+1. Change the path to the images in the code to fit your path (normally, you only have to change the user name)
+2. Run the code
+3. The image of the man appears : click on a pixel that you want to warp into the corresponding pixel of the cat image
+4. Press on any keyboard
+5. Click on the corresponding output pixel on the cat image
+6. Press on any keyboard
+7. Repeat steps 2 to 5 until the 28 pairs of points have been chosen
+8. The first image of the transformation is shown : it is the man before the morphing
+9. Each time you press on a keyboard, you see the next step of the morphing
+10. You can escape the morphing by pressing esc.
+11. On the last image, you have the photo of the cat.
 
 In the repository, you will find a video retracing the steps of the transformation in an example run I had made.
 
