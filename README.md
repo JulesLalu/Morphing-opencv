@@ -11,7 +11,8 @@ A project I made last year using opencv modules. It consists in displaying a pic
 6. Repeat steps 2 to 5 until the 28 pairs of points have been chosen
 7. The first image of the transformation is shown : it is the man before the morphing
 8. Each time you press on a keyboard, you see the next step of the morphing
-9. On the last image, you have the photo of the cat.
+9. You can escape the morphing by pressing esc.
+10. On the last image, you have the photo of the cat.
 
 In the repository, you will find a video retracing the steps of the transformation in an example run I had made.
 
