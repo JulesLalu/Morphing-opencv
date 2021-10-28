@@ -1,6 +1,8 @@
 # Morphing-opencv
 A project I made last year using opencv modules. It consists in displaying a picture of a man that would be half-human, half-cat, using 2 pictures of a human and a cat. The initial project was to create intermediate views between 2 views of a same building, which explains the additional functions that are not used in the code.
 
+The main file for running the code is morphing.py
+
 ## How to interact with the code
 
 1. Run the code
