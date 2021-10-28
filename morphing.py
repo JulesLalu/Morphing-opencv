@@ -4,8 +4,8 @@ from scipy.spatial import Delaunay
 from math import *
 from transform import *
 
-inpt1 = cv2.imread('C:/Users/jules/Pictures/homme.png')
-inpt2 = cv2.imread('C:/Users/jules/Pictures/chat.png')
+inpt1 = cv2.imread('C:/Users/jules/Documents/GitHub/Morphing-opencv/homme.png')
+inpt2 = cv2.imread('C:/Users/jules/Documents/GitHub/Morphing-opencv/chat.png')
 inpt1_copy = inpt1.copy()
 inpt2_copy = inpt2.copy()
 
@@ -46,7 +46,7 @@ pt2=np.asarray(list_pt2)
 list_pt1.extend([(0.0,0.0),(0.0,float(height_1)),(float(width_1),0.0),(float(width_1),float(height_1))])
 list_pt2.extend([(0.0,0.0),(0.0,float(height_1)),(float(width_1),0.0),(float(width_1),float(height_1))])
 
-#compute Delaunay t  riangulation from 25 matches
+#compute Delaunay triangulation from 25 matches
 pt1=np.asarray(list_pt1)
 pt2=np.asarray(list_pt2)
 tri=Delaunay(list_pt1)
@@ -56,7 +56,6 @@ num_frames = 25
 find=find_corners(pt1)
 
 for frame_num in range(num_frames):
-
 	frame_num_2=num_frames-1-frame_num
 	transfo_pt1=np.zeros(pt1.shape)
 	transfo_pt2=np.zeros(pt2.shape)
@@ -81,7 +80,9 @@ for frame_num in range(num_frames):
 
 	output3 = cv2.addWeighted(output1, 1-(frame_num/num_frames), output2, frame_num/num_frames, 0.0)
 	cv2.imshow('image no %d' % frame_num, output3)
-	cv2.waitKey(0)
-	cv2.destroyAllWindows()
+	if cv2.waitKey(0) & 0xff == 27:
+		break
+	else :
+ 		cv2.destroyAllWindows()
 
 

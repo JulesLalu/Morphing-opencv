@@ -2,7 +2,7 @@ import numpy as np
 from math import *
 from numpy import linalg as LA
 from scipy.spatial.transform import Rotation as R
-from quaternionop import quaternion_multiply, quaternion_divide
+#from quaternionop import quaternion_multiply, quaternion_divide
 import cv2
 '''
 def slerp(quat1, quat2, alpha):
